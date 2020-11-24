@@ -1,0 +1,19 @@
+Log file created at: 2020/11/21 11:54:43
+Running on machine: ou-pc
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W1121 11:54:43.901814  5039 PointCloudFusion.cpp:26] x : -2.97365 y : -1.10444e-05 z : 3.28931
+W1121 11:54:43.902040  5039 PointCloudFusion.cpp:35] size : 780472
+W1121 11:54:44.432535  5039 PointCloudFusion.cpp:26] x : -2.97365 y : -1.10444e-05 z : 3.28931
+W1121 11:54:44.432598  5039 PointCloudFusion.cpp:35] size : 780450
+W1121 11:54:44.970706  5039 PointCloudFusion.cpp:26] x : -2.97365 y : -1.10444e-05 z : 3.28931
+W1121 11:54:44.970752  5039 PointCloudFusion.cpp:35] size : 780472
+W1121 11:54:45.508270  5039 PointCloudFusion.cpp:26] x : -2.97365 y : -1.10444e-05 z : 3.28931
+W1121 11:54:45.508316  5039 PointCloudFusion.cpp:35] size : 780472
+W1121 11:54:46.039985  5039 PointCloudFusion.cpp:26] x : -2.97365 y : -1.10444e-05 z : 3.28931
+W1121 11:54:46.040035  5039 PointCloudFusion.cpp:35] size : 780472
+W1121 11:54:46.546770  5039 PointCloudFusion.cpp:26] x : -2.97365 y : -1.10444e-05 z : 3.28931
+W1121 11:54:46.546819  5039 PointCloudFusion.cpp:35] size : 780450
+W1121 11:54:47.086473  5039 PointCloudFusion.cpp:26] x : -2.97365 y : -1.10444e-05 z : 3.28931
+W1121 11:54:47.086519  5039 PointCloudFusion.cpp:35] size : 780450
+W1121 11:54:47.591538  5039 PointCloudFusion.cpp:26] x : -2.97365 y : -1.10444e-05 z : 3.28931
+W1121 11:54:47.591599  5039 PointCloudFusion.cpp:35] size : 780472

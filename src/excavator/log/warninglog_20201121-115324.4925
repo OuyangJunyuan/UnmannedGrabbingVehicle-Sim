@@ -1,0 +1,33 @@
+Log file created at: 2020/11/21 11:53:24
+Running on machine: ou-pc
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W1121 11:53:24.367089  4925 PointCloudFusion.cpp:26] get it0x7fffff17fbd0
+W1121 11:53:24.367364  4925 PointCloudFusion.cpp:34] size : 780824
+W1121 11:53:24.873755  4925 PointCloudFusion.cpp:26] get it0x7fffff17fbd0
+W1121 11:53:24.873826  4925 PointCloudFusion.cpp:34] size : 780824
+W1121 11:53:25.411790  4925 PointCloudFusion.cpp:26] get it0x7fffff17fbd0
+W1121 11:53:25.411831  4925 PointCloudFusion.cpp:34] size : 780824
+W1121 11:53:25.952412  4925 PointCloudFusion.cpp:26] get it0x7fffff17fbd0
+W1121 11:53:25.952464  4925 PointCloudFusion.cpp:34] size : 780824
+W1121 11:53:26.469018  4925 PointCloudFusion.cpp:26] get it0x7fffff17fbd0
+W1121 11:53:26.469074  4925 PointCloudFusion.cpp:34] size : 780824
+W1121 11:53:26.995070  4925 PointCloudFusion.cpp:26] get it0x7fffff17fbd0
+W1121 11:53:26.995119  4925 PointCloudFusion.cpp:34] size : 780824
+W1121 11:53:27.509335  4925 PointCloudFusion.cpp:26] get it0x7fffff17fbd0
+W1121 11:53:27.509394  4925 PointCloudFusion.cpp:34] size : 780824
+W1121 11:53:28.030597  4925 PointCloudFusion.cpp:26] get it0x7fffff17fbd0
+W1121 11:53:28.030653  4925 PointCloudFusion.cpp:34] size : 780824
+W1121 11:53:28.547253  4925 PointCloudFusion.cpp:26] get it0x7fffff17fbd0
+W1121 11:53:28.547309  4925 PointCloudFusion.cpp:34] size : 780802
+W1121 11:53:29.078276  4925 PointCloudFusion.cpp:26] get it0x7fffff17fbd0
+W1121 11:53:29.078318  4925 PointCloudFusion.cpp:34] size : 780780
+W1121 11:53:29.597084  4925 PointCloudFusion.cpp:26] get it0x7fffff17fbd0
+W1121 11:53:29.597133  4925 PointCloudFusion.cpp:34] size : 780780
+W1121 11:53:30.175509  4925 PointCloudFusion.cpp:26] get it0x7fffff17fbd0
+W1121 11:53:30.175581  4925 PointCloudFusion.cpp:34] size : 780780
+W1121 11:53:30.706423  4925 PointCloudFusion.cpp:26] get it0x7fffff17fbd0
+W1121 11:53:30.706470  4925 PointCloudFusion.cpp:34] size : 780758
+W1121 11:53:31.242996  4925 PointCloudFusion.cpp:26] get it0x7fffff17fbd0
+W1121 11:53:31.243054  4925 PointCloudFusion.cpp:34] size : 780780
+W1121 11:53:31.764199  4925 PointCloudFusion.cpp:26] get it0x7fffff17fbd0
+W1121 11:53:31.764237  4925 PointCloudFusion.cpp:34] size : 780780

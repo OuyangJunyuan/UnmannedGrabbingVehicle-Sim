@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="excavator">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.072298 -0.0051598 -4.4577E-09"
+        rpy="0 0 0" />
+      <mass
+        value="6667.6" />
+      <inertia
+        ixx="2102.3"
+        ixy="-5.2119"
+        ixz="3.0279E-05"
+        iyy="4554"
+        iyz="-4.6553E-06"
+        izz="2690.1" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://excavator/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://excavator/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Top_link">
+    <inertial>
+      <origin
+        xyz="0.85443 0.42482 -0.035362"
+        rpy="0 0 0" />
+      <mass
+        value="24468" />
+      <inertia
+        ixx="7338.7"
+        ixy="-933.32"
+        ixz="-992.81"
+        iyy="18737"
+        iyz="47.99"
+        izz="14261" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://excavator/meshes/Top_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://excavator/meshes/Top_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="WaistJoint"
+    type="revolute">
+    <origin
+      xyz="0.013413 0 0.28256"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Top_link" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="arm_link1">
+    <inertial>
+      <origin
+        xyz="-0.22767 1.7727 8.527E-12"
+        rpy="0 0 0" />
+      <mass
+        value="2244.3" />
+      <inertia
+        ixx="1477.1"
+        ixy="506.61"
+        ixz="6.3581E-13"
+        iyy="330.65"
+        iyz="-1.2935E-12"
+        izz="1789" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://excavator/meshes/arm_link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.52941 0.54902 0.54902 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://excavator/meshes/arm_link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ArmBaseJoint"
+    type="revolute">
+    <origin
+      xyz="-0.14 0.7037 0"
+      rpy="0 0 0.49988" />
+    <parent
+      link="Top_link" />
+    <child
+      link="arm_link1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="1.2"
+      upper="-1.2"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="arm_link2">
+    <inertial>
+      <origin
+        xyz="0.0051018 -1.0842 8.5292E-12"
+        rpy="0 0 0" />
+      <mass
+        value="786.93" />
+      <inertia
+        ixx="311.46"
+        ixy="-2.8491"
+        ixz="1.8029E-15"
+        iyy="8.0254"
+        iyz="7.113E-14"
+        izz="312.54" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://excavator/meshes/arm_link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.52941 0.54902 0.54902 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://excavator/meshes/arm_link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Arm12Joint"
+    type="revolute">
+    <origin
+      xyz="-1.3948 3.2859 0"
+      rpy="0 0 -0.67351" />
+    <parent
+      link="arm_link1" />
+    <child
+      link="arm_link2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="1.5707"
+      upper="-1.5707"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="arm_link3">
+    <inertial>
+      <origin
+        xyz="0.10076 -0.52187 5.5716E-07"
+        rpy="0 0 0" />
+      <mass
+        value="551.2" />
+      <inertia
+        ixx="70.288"
+        ixy="18.95"
+        ixz="-2.3668E-05"
+        iyy="70.748"
+        iyz="1.0369E-05"
+        izz="69.765" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://excavator/meshes/arm_link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.52941 0.54902 0.54902 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://excavator/meshes/arm_link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Arm23Joint"
+    type="revolute">
+    <origin
+      xyz="0 -2.24 0"
+      rpy="0 0 -0.066766" />
+    <parent
+      link="arm_link2" />
+    <child
+      link="arm_link3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="1.5707"
+      upper="-1.5707"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
