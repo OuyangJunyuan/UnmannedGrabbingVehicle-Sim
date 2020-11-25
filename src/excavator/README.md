@@ -17,4 +17,6 @@
              Arm23Joint_position_controller
    ```
 
-注意：以上过程特别是第二部会比较慢(可能是LiDAR仿真太吃内存，目前占用11G内存)，请耐心加载。
+注意：
+1. 以上过程特别是第二部会比较慢(可能是LiDAR仿真太吃内存，目前占用11G内存)，请耐心加载。
+2. 第一步如果加载不出世界，则可能是gazebo模型缺失。将./models/stone1 复制到~/.gazebo/models/中
