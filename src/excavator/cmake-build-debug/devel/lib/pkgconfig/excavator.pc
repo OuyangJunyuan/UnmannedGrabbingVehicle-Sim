@@ -1,8 +1,0 @@
-prefix=/home/ou/workspace/ugv_ws/src/excavator/cmake-build-debug/devel
-
-Name: excavator
-Description: Description of excavator
-Version: 1.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
