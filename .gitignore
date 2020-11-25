@@ -1,7 +1,6 @@
+build
+devel
 src/CMakeLists.txt
-*/build/*
-*/devel/*
-*/.idea/*
-*/cmake-build-debug/*
-*.zip
+src/*/.idea/*
+src/*/cmake-build-debug/*
 
