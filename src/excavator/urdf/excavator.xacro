@@ -1,6 +1,10 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="Excavator">
   <xacro:include filename="$(find velodyne_description)/urdf/LiDAR-80.xacro"/>
+  <xacro:include filename="$(find velodyne_description)/urdf/VLP-16.urdf.xacro"/>
+  <xacro:include filename="$(find excavator)/urdf/CameraSensor.xacro"/>
+
+
 
   <xacro:property name="M_PI" value="3.1415926535897931" />
   <xacro:macro name="Macro_transmission" params="name joint actuator">
@@ -244,8 +248,6 @@
       </collision>
     </link>
   </xacro:macro>
-
-
   <xacro:macro name="RubyLite" params="name:=RubyLite parent frame *origin topic">
     <xacro:laserModel
             name="${name}"
@@ -259,6 +261,7 @@
     </xacro:laserModel>
   </xacro:macro>
 
+  <!-- 实例化一个挖掘机的宏定义 -->
   <xacro:macro name="Macro_Excavator" params="parent">
     <gazebo>
       <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so"/>
@@ -291,12 +294,26 @@
       <axis xyz="0 0 1" />
     </xacro:Macro_RevoluteJoint>
 
+    <!--  激光雷达 80线两个  -->
     <xacro:RubyLite name="RubyLite1" parent="ArmLink1" frame="RubyLite1_frame" topic="RubyLite1">
       <origin xyz="-1.3948 3.3859 0" rpy="${-M_PI/2} 0 -0.67351" />
     </xacro:RubyLite>
-    <xacro:RubyLite name="RubyLite2" parent="TopLink" frame="RubyLite2_frame" topic="RubyLite2">
+    <xacro:RubyLite name="RubyLite2" parent="TopLink"  frame="RubyLite2_frame" topic="RubyLite2">
       <origin xyz="-0.7 1.55 0.5" rpy="${-M_PI/2} 0 0" />
     </xacro:RubyLite>
+    <!--  激光雷达 32线3个  -->
+    <xacro:VLP-16   name="velodyne1" parent="TopLink"  samples="360" topic="/velodyne1">
+      <origin xyz="-0.9 0.3 1" rpy="${-M_PI/2} 0 0" />
+    </xacro:VLP-16>
+    <xacro:VLP-16   name="velodyne2" parent="TopLink"  samples="360" topic="/velodyne2">
+      <origin xyz="2.2 0.3 1" rpy="${-M_PI/2} 0 0" />
+    </xacro:VLP-16>
+    <xacro:VLP-16   name="velodyne3" parent="TopLink"  samples="360" topic="/velodyne3">
+      <origin xyz="2.2 0.3 -1" rpy="${-M_PI/2} 0 0" />
+    </xacro:VLP-16>
 
+    <xacro:Macro_CameraROS name="camera1" parent="TopLink" frame="camera1_link" >
+      <origin xyz="-0.7 1.55 0.6" rpy="${-M_PI/2} ${M_PI} 0" />
+    </xacro:Macro_CameraROS>
   </xacro:macro>
 </robot>

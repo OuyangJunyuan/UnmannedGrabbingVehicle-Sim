@@ -5,12 +5,12 @@
 
 
 <!--  <node name="goundplane_model" pkg="gazebo_ros" type="spawn_model" args="-sdf -database models -model quanzhou" output="screen" />-->
-  <node name="spawn_model" pkg="gazebo_ros" type="spawn_model" args="-urdf -param /robot_description -model excavator  -x 0 -y 0 -z 4 " output="screen" />
+  <node name="spawn_model" pkg="gazebo_ros" type="spawn_model" args="-urdf -param /robot_description -model excavator  -x 0 -y 0 -z 0.5 " output="screen" />
 
 
 
   <rosparam file="$(find excavator)/config/joint_names_excavator.yaml" command="load"/>
-  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+  <node name="controller_spawner" pkg="controller_manager" type="spawner"  respawn="true"
         output="screen"
         args="
           joint_state_controller

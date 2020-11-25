@@ -6,7 +6,7 @@
     <arg name="headless" default="false"/>
     <arg name="debug" default="false"/>
     <arg name="verbose" default="false"/>
-    <arg name="world_name" default="/home/ou/workspace/ugv_ws/src/excavator/world/mountain.world"/>
+    <arg name="world_name" default="/home/ou/workspace/ugv_ws/src/excavator/world/sandland.world"/>
     <include file="$(find gazebo_ros)/launch/empty_world.launch" >
         <arg name="paused" value="$(arg paused)"/>
         <arg name="use_sim_time" value="$(arg use_sim_time)"/>

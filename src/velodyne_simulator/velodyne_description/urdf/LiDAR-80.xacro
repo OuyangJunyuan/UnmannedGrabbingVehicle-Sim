@@ -93,11 +93,11 @@
 
     <!-- non-uniform LiDAR config -->
     <gazebo reference="${frame}">
-      <xacro:LiDARSensorGen name="sensor-sector" suffix="1" hz="${hz}" samples="${samples}" lasers="10+1"  visualize="${visualize}"
+      <xacro:LiDARSensorGen name="sensor-sector" suffix="1" hz="${hz}" samples="${samples}" lasers="15+1"  visualize="${visualize}"
                             v_max_angle="${15   *M_PI/180.0}"     v_min_angle="${1.91   *M_PI/180.0}"/>
-      <xacro:LiDARSensorGen name="sensor-sector" suffix="2" hz="${hz}" samples="${samples}" lasers="3-2"   visualize="${visualize}"
+      <xacro:LiDARSensorGen name="sensor-sector" suffix="2" hz="${hz}" samples="${samples}" lasers="20-2"   visualize="${visualize}"
                             v_max_angle="${1.01 *M_PI/180.0}"     v_min_angle="${-2.99  *M_PI/180.0}"/>
-      <xacro:LiDARSensorGen name="sensor-sector" suffix="3" hz="${hz}" samples="${samples}" lasers="20+1"  visualize="${visualize}"
+      <xacro:LiDARSensorGen name="sensor-sector" suffix="3" hz="${hz}" samples="${samples}" lasers="25+1"  visualize="${visualize}"
                             v_max_angle="${-3.89*M_PI/180.0}"     v_min_angle="${-25    *M_PI/180.0}"/>
     </gazebo>
 

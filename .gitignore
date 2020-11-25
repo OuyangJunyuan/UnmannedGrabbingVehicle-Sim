@@ -1,0 +1,5 @@
+build
+devel
+src/cmake-build-debug
+src/.idea
+src/CMakeLists.txt

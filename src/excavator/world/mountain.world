@@ -91,7 +91,7 @@
           <geometry>
             <heightmap>
               <uri>model://mcmillan_airfield/media/mcmillan_elevation.tif</uri>
-              <pos>-1600 1300 -300</pos>
+              <pos>0 0 -300</pos>
               <texture>
                 <size>10</size>
                 <diffuse>__default__</diffuse>
@@ -129,7 +129,7 @@
                 <size>5700</size>
               </texture>
               <uri>model://mcmillan_airfield/media/mcmillan_elevation.tif</uri>
-              <pos>-1600 1300 -300</pos>
+              <pos>0 0 -300</pos>
               <blend>
                 <min_height>0</min_height>
                 <fade_dist>0</fade_dist>
