@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/ou/workspace/ros_temp_ws/src/excavator/devel/setup.sh

@@ -1,0 +1,276 @@
+Log file created at: 2020/11/21 17:09:03
+Running on machine: ou-pc
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W1121 17:09:03.963119  7829 PointCloudFusion.cpp:26] x : -3.50582 y : 0.355316 z : 2.35349
+W1121 17:09:03.963380  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:04.483858  7829 PointCloudFusion.cpp:26] x : -3.50578 y : 0.355617 z : 2.35352
+W1121 17:09:04.483909  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:05.029898  7829 PointCloudFusion.cpp:26] x : -3.50571 y : 0.355723 z : 2.35366
+W1121 17:09:05.029963  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:05.580669  7829 PointCloudFusion.cpp:26] x : -3.50573 y : 0.355994 z : 2.35356
+W1121 17:09:05.580746  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:06.328959  7829 PointCloudFusion.cpp:26] x : -3.50564 y : 0.356237 z : 2.3537
+W1121 17:09:06.329164  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:07.123356  7829 PointCloudFusion.cpp:26] x : -3.50562 y : 0.356353 z : 2.35372
+W1121 17:09:07.123420  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:07.826058  7829 PointCloudFusion.cpp:26] x : -3.50554 y : 0.356759 z : 2.35384
+W1121 17:09:07.826118  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:08.416493  7829 PointCloudFusion.cpp:26] x : -3.50549 y : 0.357024 z : 2.35387
+W1121 17:09:08.416544  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:08.941761  7829 PointCloudFusion.cpp:26] x : -3.50545 y : 0.35717 z : 2.35395
+W1121 17:09:08.941813  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:09.468240  7829 PointCloudFusion.cpp:26] x : -3.50544 y : 0.357241 z : 2.35394
+W1121 17:09:09.468289  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:09.997165  7829 PointCloudFusion.cpp:26] x : -3.5054 y : 0.357841 z : 2.35391
+W1121 17:09:09.997290  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:10.551743  7829 PointCloudFusion.cpp:26] x : -3.50532 y : 0.358036 z : 2.35405
+W1121 17:09:10.551826  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:11.093765  7829 PointCloudFusion.cpp:26] x : -3.50529 y : 0.358309 z : 2.35406
+W1121 17:09:11.093832  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:11.612865  7829 PointCloudFusion.cpp:26] x : -3.50524 y : 0.358444 z : 2.35414
+W1121 17:09:11.612926  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:12.145951  7829 PointCloudFusion.cpp:26] x : -3.50519 y : 0.358672 z : 2.3542
+W1121 17:09:12.145998  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:12.702908  7829 PointCloudFusion.cpp:26] x : -3.50517 y : 0.3589 z : 2.35421
+W1121 17:09:12.702958  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:13.245434  7829 PointCloudFusion.cpp:26] x : -3.50512 y : 0.359047 z : 2.35428
+W1121 17:09:13.245494  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:13.802386  7829 PointCloudFusion.cpp:26] x : -3.5051 y : 0.359289 z : 2.35427
+W1121 17:09:13.802448  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:14.333056  7829 PointCloudFusion.cpp:26] x : -3.50516 y : 0.359638 z : 2.35405
+W1121 17:09:14.333120  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:14.867252  7829 PointCloudFusion.cpp:26] x : -3.50508 y : 0.359976 z : 2.35415
+W1121 17:09:14.867297  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:15.393853  7829 PointCloudFusion.cpp:26] x : -3.50497 y : 0.360232 z : 2.35436
+W1121 17:09:15.393931  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:15.948511  7829 PointCloudFusion.cpp:26] x : -3.50493 y : 0.360449 z : 2.35441
+W1121 17:09:15.948577  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:16.521944  7829 PointCloudFusion.cpp:26] x : -3.50485 y : 0.360913 z : 2.35449
+W1121 17:09:16.521996  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:17.062836  7829 PointCloudFusion.cpp:26] x : -3.50489 y : 0.360976 z : 2.35438
+W1121 17:09:17.062906  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:17.600445  7829 PointCloudFusion.cpp:26] x : -3.50478 y : 0.361403 z : 2.35453
+W1121 17:09:17.600503  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:18.138469  7829 PointCloudFusion.cpp:26] x : -3.5048 y : 0.361547 z : 2.35444
+W1121 17:09:18.138530  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:18.668289  7829 PointCloudFusion.cpp:26] x : -3.5047 y : 0.361894 z : 2.3546
+W1121 17:09:18.668538  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:19.197886  7829 PointCloudFusion.cpp:26] x : -3.50468 y : 0.362091 z : 2.3546
+W1121 17:09:19.197958  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:19.748574  7829 PointCloudFusion.cpp:26] x : -3.50463 y : 0.362421 z : 2.35464
+W1121 17:09:19.748647  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:20.291590  7829 PointCloudFusion.cpp:26] x : -3.50463 y : 0.362664 z : 2.35459
+W1121 17:09:20.291663  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:20.831926  7829 PointCloudFusion.cpp:26] x : -3.50456 y : 0.362808 z : 2.35473
+W1121 17:09:20.832351  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:21.360910  7829 PointCloudFusion.cpp:26] x : -3.50458 y : 0.362987 z : 2.35463
+W1121 17:09:21.360975  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:21.914701  7829 PointCloudFusion.cpp:26] x : -3.50448 y : 0.362954 z : 2.35487
+W1121 17:09:21.914786  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:22.445399  7829 PointCloudFusion.cpp:26] x : -3.50445 y : 0.363214 z : 2.35488
+W1121 17:09:22.445485  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:22.963625  7829 PointCloudFusion.cpp:26] x : -3.50442 y : 0.363489 z : 2.35489
+W1121 17:09:22.963718  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:23.485570  7829 PointCloudFusion.cpp:26] x : -3.5044 y : 0.363678 z : 2.35488
+W1121 17:09:23.485920  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:24.013286  7829 PointCloudFusion.cpp:26] x : -3.50438 y : 0.364014 z : 2.35486
+W1121 17:09:24.013371  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:24.566051  7829 PointCloudFusion.cpp:26] x : -3.50438 y : 0.364199 z : 2.35482
+W1121 17:09:24.566195  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:25.098438  7829 PointCloudFusion.cpp:26] x : -3.50421 y : 0.364809 z : 2.35506
+W1121 17:09:25.098531  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:25.626113  7829 PointCloudFusion.cpp:26] x : -3.50418 y : 0.365101 z : 2.35506
+W1121 17:09:25.626266  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:26.167419  7829 PointCloudFusion.cpp:26] x : -3.50412 y : 0.365281 z : 2.35517
+W1121 17:09:26.167510  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:26.677112  7829 PointCloudFusion.cpp:26] x : -3.5042 y : 0.365506 z : 2.35492
+W1121 17:09:26.677166  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:27.215898  7829 PointCloudFusion.cpp:26] x : -3.50412 y : 0.36578 z : 2.35504
+W1121 17:09:27.216037  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:27.728034  7829 PointCloudFusion.cpp:26] x : -3.50408 y : 0.365675 z : 2.35518
+W1121 17:09:27.728132  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:28.262692  7829 PointCloudFusion.cpp:26] x : -3.50407 y : 0.365757 z : 2.35517
+W1121 17:09:28.262809  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:28.790096  7829 PointCloudFusion.cpp:26] x : -3.504 y : 0.365964 z : 2.3553
+W1121 17:09:28.790169  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:29.304582  7829 PointCloudFusion.cpp:26] x : -3.50397 y : 0.366133 z : 2.35532
+W1121 17:09:29.304669  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:29.829548  7829 PointCloudFusion.cpp:26] x : -3.50402 y : 0.366167 z : 2.35519
+W1121 17:09:29.829651  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:30.403110  7829 PointCloudFusion.cpp:26] x : -3.50389 y : 0.366461 z : 2.35545
+W1121 17:09:30.403225  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:30.948096  7829 PointCloudFusion.cpp:26] x : -3.5039 y : 0.36643 z : 2.35542
+W1121 17:09:30.948158  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:31.476719  7829 PointCloudFusion.cpp:26] x : -3.50387 y : 0.36636 z : 2.35551
+W1121 17:09:31.476771  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:31.994287  7829 PointCloudFusion.cpp:26] x : -3.50386 y : 0.366664 z : 2.35547
+W1121 17:09:31.994623  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:32.546088  7829 PointCloudFusion.cpp:26] x : -3.5038 y : 0.366881 z : 2.35556
+W1121 17:09:32.546159  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:33.079015  7829 PointCloudFusion.cpp:26] x : -3.50375 y : 0.367364 z : 2.35555
+W1121 17:09:33.079150  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:33.614156  7829 PointCloudFusion.cpp:26] x : -3.50371 y : 0.367712 z : 2.35557
+W1121 17:09:33.614324  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:34.134869  7829 PointCloudFusion.cpp:26] x : -3.50369 y : 0.367807 z : 2.35558
+W1121 17:09:34.135020  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:34.662479  7829 PointCloudFusion.cpp:26] x : -3.50369 y : 0.368165 z : 2.35548
+W1121 17:09:34.662644  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:35.202878  7829 PointCloudFusion.cpp:26] x : -3.50361 y : 0.36807 z : 2.35572
+W1121 17:09:35.202961  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:35.740089  7829 PointCloudFusion.cpp:26] x : -3.50358 y : 0.36812 z : 2.35577
+W1121 17:09:35.740150  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:36.275174  7829 PointCloudFusion.cpp:26] x : -3.50352 y : 0.36849 z : 2.35582
+W1121 17:09:36.275318  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:36.804911  7829 PointCloudFusion.cpp:26] x : -3.50349 y : 0.368866 z : 2.35581
+W1121 17:09:36.805171  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:37.320109  7829 PointCloudFusion.cpp:26] x : -3.50345 y : 0.369216 z : 2.35581
+W1121 17:09:37.320233  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:37.853513  7829 PointCloudFusion.cpp:26] x : -3.50342 y : 0.369271 z : 2.35587
+W1121 17:09:37.853626  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:38.405709  7829 PointCloudFusion.cpp:26] x : -3.50338 y : 0.369489 z : 2.35592
+W1121 17:09:38.405884  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:38.945823  7829 PointCloudFusion.cpp:26] x : -3.50333 y : 0.369555 z : 2.35602
+W1121 17:09:38.946014  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:39.483001  7829 PointCloudFusion.cpp:26] x : -3.50333 y : 0.36974 z : 2.35597
+W1121 17:09:39.483059  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:40.003217  7829 PointCloudFusion.cpp:26] x : -3.50332 y : 0.369919 z : 2.35595
+W1121 17:09:40.003369  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:40.548384  7829 PointCloudFusion.cpp:26] x : -3.50326 y : 0.370209 z : 2.35601
+W1121 17:09:40.548529  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:41.083115  7829 PointCloudFusion.cpp:26] x : -3.50323 y : 0.370614 z : 2.35599
+W1121 17:09:41.083235  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:41.623087  7829 PointCloudFusion.cpp:26] x : -3.50314 y : 0.370753 z : 2.35619
+W1121 17:09:41.623184  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:42.171167  7829 PointCloudFusion.cpp:26] x : -3.50313 y : 0.370792 z : 2.35619
+W1121 17:09:42.171298  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:42.716517  7829 PointCloudFusion.cpp:26] x : -3.5031 y : 0.370971 z : 2.35622
+W1121 17:09:42.716589  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:43.253057  7829 PointCloudFusion.cpp:26] x : -3.5031 y : 0.371297 z : 2.35613
+W1121 17:09:43.253137  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:43.790004  7829 PointCloudFusion.cpp:26] x : -3.50299 y : 0.371518 z : 2.35634
+W1121 17:09:43.791687  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:44.344640  7829 PointCloudFusion.cpp:26] x : -3.50298 y : 0.371611 z : 2.35634
+W1121 17:09:44.344712  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:44.880939  7829 PointCloudFusion.cpp:26] x : -3.50296 y : 0.371669 z : 2.35639
+W1121 17:09:44.881079  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:45.397372  7829 PointCloudFusion.cpp:26] x : -3.50293 y : 0.371874 z : 2.35639
+W1121 17:09:45.397473  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:45.940681  7829 PointCloudFusion.cpp:26] x : -3.50289 y : 0.372116 z : 2.35644
+W1121 17:09:45.940757  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:46.475325  7829 PointCloudFusion.cpp:26] x : -3.5029 y : 0.372299 z : 2.35637
+W1121 17:09:46.475476  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:47.013756  7829 PointCloudFusion.cpp:26] x : -3.50284 y : 0.372583 z : 2.35645
+W1121 17:09:47.013870  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:47.546649  7829 PointCloudFusion.cpp:26] x : -3.50286 y : 0.372677 z : 2.35637
+W1121 17:09:47.546775  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:48.088647  7829 PointCloudFusion.cpp:26] x : -3.50275 y : 0.372838 z : 2.3566
+W1121 17:09:48.088763  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:48.624794  7829 PointCloudFusion.cpp:26] x : -3.50277 y : 0.372999 z : 2.35651
+W1121 17:09:48.625005  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:49.144780  7829 PointCloudFusion.cpp:26] x : -3.50276 y : 0.373201 z : 2.35646
+W1121 17:09:49.144865  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:49.674753  7829 PointCloudFusion.cpp:26] x : -3.5027 y : 0.373401 z : 2.35658
+W1121 17:09:49.674937  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:50.215601  7829 PointCloudFusion.cpp:26] x : -3.50268 y : 0.373639 z : 2.35656
+W1121 17:09:50.215708  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:50.736449  7829 PointCloudFusion.cpp:26] x : -3.50263 y : 0.373988 z : 2.35658
+W1121 17:09:50.736611  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:51.270048  7829 PointCloudFusion.cpp:26] x : -3.50257 y : 0.374204 z : 2.35667
+W1121 17:09:51.270234  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:51.795593  7829 PointCloudFusion.cpp:26] x : -3.50252 y : 0.374562 z : 2.35671
+W1121 17:09:51.795744  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:52.337812  7829 PointCloudFusion.cpp:26] x : -3.50248 y : 0.374743 z : 2.35676
+W1121 17:09:52.337911  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:52.857347  7829 PointCloudFusion.cpp:26] x : -3.50248 y : 0.37481 z : 2.35675
+W1121 17:09:52.857446  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:53.392182  7829 PointCloudFusion.cpp:26] x : -3.5024 y : 0.37518 z : 2.35684
+W1121 17:09:53.392297  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:54.016840  7829 PointCloudFusion.cpp:26] x : -3.50237 y : 0.375307 z : 2.35688
+W1121 17:09:54.016944  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:54.749696  7829 PointCloudFusion.cpp:26] x : -3.50229 y : 0.375695 z : 2.35698
+W1121 17:09:54.751077  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:55.340562  7829 PointCloudFusion.cpp:26] x : -3.50233 y : 0.375906 z : 2.35681
+W1121 17:09:55.340623  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:55.763818  7829 PointCloudFusion.cpp:26] x : -3.5022 y : 0.376303 z : 2.35705
+W1121 17:09:55.763950  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:56.528129  7829 PointCloudFusion.cpp:26] x : -3.50217 y : 0.376576 z : 2.35704
+W1121 17:09:56.528192  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:57.284451  7829 PointCloudFusion.cpp:26] x : -3.50221 y : 0.376886 z : 2.35687
+W1121 17:09:57.284693  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:57.872326  7829 PointCloudFusion.cpp:26] x : -3.5021 y : 0.376779 z : 2.35716
+W1121 17:09:57.872397  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:58.417544  7829 PointCloudFusion.cpp:26] x : -3.50211 y : 0.376888 z : 2.35712
+W1121 17:09:58.420166  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:59.132030  7829 PointCloudFusion.cpp:26] x : -3.50215 y : 0.376967 z : 2.357
+W1121 17:09:59.132112  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:09:59.714044  7829 PointCloudFusion.cpp:26] x : -3.50202 y : 0.377174 z : 2.35726
+W1121 17:09:59.714150  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:10:00.234993  7829 PointCloudFusion.cpp:26] x : -3.50198 y : 0.377678 z : 2.35722
+W1121 17:10:00.235131  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:10:00.773344  7829 PointCloudFusion.cpp:26] x : -3.50195 y : 0.378119 z : 2.35719
+W1121 17:10:00.773572  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:10:01.301980  7829 PointCloudFusion.cpp:26] x : -3.50184 y : 0.378347 z : 2.35739
+W1121 17:10:01.302055  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:10:01.839454  7829 PointCloudFusion.cpp:26] x : -3.5019 y : 0.378536 z : 2.35719
+W1121 17:10:01.839653  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:10:02.378185  7829 PointCloudFusion.cpp:26] x : -3.50178 y : 0.37882 z : 2.35741
+W1121 17:10:02.378278  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:10:02.904786  7829 PointCloudFusion.cpp:26] x : -3.5018 y : 0.3794 z : 2.35722
+W1121 17:10:02.904919  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:10:03.443778  7829 PointCloudFusion.cpp:26] x : -3.5017 y : 0.379715 z : 2.35737
+W1121 17:10:03.444376  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:10:03.981519  7829 PointCloudFusion.cpp:26] x : -3.50163 y : 0.379889 z : 2.35749
+W1121 17:10:03.981622  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:10:04.528209  7829 PointCloudFusion.cpp:26] x : -3.50158 y : 0.380325 z : 2.3575
+W1121 17:10:04.528327  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:10:05.095096  7829 PointCloudFusion.cpp:26] x : -3.50157 y : 0.380614 z : 2.35744
+W1121 17:10:05.095299  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:10:05.623047  7829 PointCloudFusion.cpp:26] x : -3.50153 y : 0.380569 z : 2.35757
+W1121 17:10:05.623100  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:10:06.164404  7829 PointCloudFusion.cpp:26] x : -3.50153 y : 0.380845 z : 2.35748
+W1121 17:10:06.164536  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:10:06.701134  7829 PointCloudFusion.cpp:26] x : -3.50147 y : 0.380988 z : 2.3576
+W1121 17:10:06.701293  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:10:07.241230  7829 PointCloudFusion.cpp:26] x : -3.50151 y : 0.381371 z : 2.3574
+W1121 17:10:07.241340  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:10:07.790428  7829 PointCloudFusion.cpp:26] x : -3.50139 y : 0.381598 z : 2.35763
+W1121 17:10:07.790894  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:10:08.349745  7829 PointCloudFusion.cpp:26] x : -3.50139 y : 0.381707 z : 2.35761
+W1121 17:10:08.349803  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:10:08.884486  7829 PointCloudFusion.cpp:26] x : -3.50135 y : 0.38203 z : 2.3576
+W1121 17:10:08.885329  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:10:09.412755  7829 PointCloudFusion.cpp:26] x : -3.50131 y : 0.382109 z : 2.3577
+W1121 17:10:09.412869  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:10:09.943871  7829 PointCloudFusion.cpp:26] x : -3.5013 y : 0.382459 z : 2.35763
+W1121 17:10:09.943925  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:10:10.493172  7829 PointCloudFusion.cpp:26] x : -3.50125 y : 0.382626 z : 2.3577
+W1121 17:10:10.494832  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:10:11.021762  7829 PointCloudFusion.cpp:26] x : -3.50112 y : 0.382879 z : 2.35794
+W1121 17:10:11.021939  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:10:11.578825  7829 PointCloudFusion.cpp:26] x : -3.50114 y : 0.382862 z : 2.35791
+W1121 17:10:11.578927  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:10:12.118227  7829 PointCloudFusion.cpp:26] x : -3.50116 y : 0.382748 z : 2.35788
+W1121 17:10:12.118301  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:10:12.657627  7829 PointCloudFusion.cpp:26] x : -3.50112 y : 0.382748 z : 2.35797
+W1121 17:10:12.657704  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:10:13.181704  7829 PointCloudFusion.cpp:26] x : -3.50116 y : 0.382994 z : 2.35783
+W1121 17:10:13.183107  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:10:13.731088  7829 PointCloudFusion.cpp:26] x : -3.50105 y : 0.383298 z : 2.35801
+W1121 17:10:13.731189  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:10:14.264451  7829 PointCloudFusion.cpp:26] x : -3.50098 y : 0.383687 z : 2.35807
+W1121 17:10:14.264549  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:10:14.774610  7829 PointCloudFusion.cpp:26] x : -3.50095 y : 0.38393 z : 2.35809
+W1121 17:10:14.774793  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:10:15.328809  7829 PointCloudFusion.cpp:26] x : -3.5009 y : 0.384131 z : 2.35815
+W1121 17:10:15.328919  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:10:15.856912  7829 PointCloudFusion.cpp:26] x : -3.50093 y : 0.384076 z : 2.3581
+W1121 17:10:15.857209  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:10:16.384060  7829 PointCloudFusion.cpp:26] x : -3.50085 y : 0.38431 z : 2.35822
+W1121 17:10:16.384178  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:10:16.936534  7829 PointCloudFusion.cpp:26] x : -3.50083 y : 0.384486 z : 2.35823
+W1121 17:10:16.937110  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:10:17.471038  7829 PointCloudFusion.cpp:26] x : -3.50079 y : 0.384696 z : 2.35826
+W1121 17:10:17.471179  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:10:18.002801  7829 PointCloudFusion.cpp:26] x : -3.50082 y : 0.384563 z : 2.35825
+W1121 17:10:18.002948  7829 PointCloudFusion.cpp:35] size : 1584000
+W1121 17:10:18.526358  7829 PointCloudFusion.cpp:26] x : -3.5007

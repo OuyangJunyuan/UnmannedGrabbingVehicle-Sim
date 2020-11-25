@@ -1,0 +1,23 @@
+Log file created at: 2020/11/21 00:51:20
+Running on machine: ou-pc
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W1121 00:51:20.937649 12967 PointCloudFusion.cpp:22] get itRubyLite1
+W1121 00:51:20.938022 12967 PointCloudFusion.cpp:22] get itRubyLite1
+W1121 00:51:20.938166 12967 PointCloudFusion.cpp:22] get itRubyLite1
+W1121 00:51:20.938283 12967 PointCloudFusion.cpp:22] get itRubyLite1
+W1121 00:51:20.938385 12967 PointCloudFusion.cpp:22] get itRubyLite1
+W1121 00:51:20.938489 12967 PointCloudFusion.cpp:22] get itRubyLite1
+W1121 00:51:20.938591 12967 PointCloudFusion.cpp:22] get itRubyLite1
+W1121 00:51:20.938685 12967 PointCloudFusion.cpp:22] get itRubyLite1
+W1121 00:51:20.938786 12967 PointCloudFusion.cpp:22] get itRubyLite1
+W1121 00:51:20.938889 12967 PointCloudFusion.cpp:22] get itRubyLite1
+W1121 00:51:21.444177 12967 PointCloudFusion.cpp:22] get itRubyLite1
+W1121 00:51:21.948801 12967 PointCloudFusion.cpp:22] get itRubyLite1
+W1121 00:51:22.464083 12967 PointCloudFusion.cpp:22] get itRubyLite1
+W1121 00:51:23.010108 12967 PointCloudFusion.cpp:22] get itRubyLite1
+W1121 00:51:23.508744 12967 PointCloudFusion.cpp:22] get itRubyLite1
+W1121 00:51:24.031836 12967 PointCloudFusion.cpp:22] get itRubyLite1
+W1121 00:51:24.548879 12967 PointCloudFusion.cpp:22] get itRubyLite1
+W1121 00:51:25.097642 12967 PointCloudFusion.cpp:22] get itRubyLite1
+W1121 00:51:25.626588 12967 PointCloudFusion.cpp:22] get itRubyLite1
+W1121 00:51:26.164444 12967 PointCloudFusion.cpp:22] get itRubyLite1

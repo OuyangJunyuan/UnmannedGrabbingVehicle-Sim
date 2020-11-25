@@ -1,0 +1,574 @@
+Log file created at: 2020/11/21 11:49:53
+Running on machine: ou-pc
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W1121 11:49:53.632897  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:49:53.633131  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:49:54.181567  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:49:54.181620  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:49:54.706702  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:49:54.706743  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:49:55.222815  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:49:55.222857  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:49:55.739135  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:49:55.739316  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:49:56.272439  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:49:56.272490  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:49:56.783978  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:49:56.784035  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:49:57.308395  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:49:57.308454  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:49:57.829779  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:49:57.829818  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:49:58.371563  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:49:58.371619  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:49:58.903452  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:49:58.903492  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:49:59.425503  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:49:59.425561  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:49:59.958498  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:49:59.958539  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:00.471269  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:00.471313  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:00.996356  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:00.996408  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:01.509248  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:01.509305  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:02.047523  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:02.047574  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:02.574069  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:02.574131  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:03.091656  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:03.091699  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:03.615171  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:03.615211  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:04.141074  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:04.141113  4675 PointCloudFusion.cpp:34] size : 780802
+W1121 11:50:04.655200  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:04.655253  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:05.185134  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:05.185179  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:05.708746  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:05.708802  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:06.243237  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:06.243278  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:06.786121  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:06.786180  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:07.312323  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:07.312371  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:07.848467  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:07.848508  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:08.389370  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:08.389432  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:08.939260  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:08.939463  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:09.502087  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:09.502209  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:10.040519  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:10.040601  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:10.585404  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:10.585551  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:11.111933  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:11.111999  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:11.632480  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:11.632578  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:12.153961  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:12.154017  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:12.677944  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:12.677991  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:13.220155  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:13.220238  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:13.742013  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:13.742091  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:14.291035  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:14.291218  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:14.825737  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:14.825809  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:15.381645  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:15.381799  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:15.911345  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:15.911485  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:16.439882  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:16.440001  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:16.979470  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:16.979532  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:17.516899  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:17.516989  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:18.056754  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:18.056807  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:18.580147  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:18.580263  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:19.099843  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:19.099949  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:19.637290  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:19.637364  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:20.160395  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:20.160588  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:20.691726  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:20.691771  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:21.219125  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:21.219210  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:21.764395  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:21.764484  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:22.300902  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:22.301055  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:22.835251  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:22.835299  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:23.377287  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:23.377352  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:23.904454  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:23.904538  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:24.442716  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:24.442836  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:24.970530  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:24.970695  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:25.499415  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:25.499505  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:26.012974  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:26.013056  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:26.534023  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:26.534071  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:27.051602  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:27.051661  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:27.579341  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:27.579463  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:28.130854  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:28.130920  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:28.660037  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:28.660254  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:29.223572  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:29.223863  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:29.750169  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:29.750303  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:30.277618  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:30.277760  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:30.820572  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:30.820736  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:31.367929  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:31.367978  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:31.907145  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:31.907213  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:32.450665  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:32.450793  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:32.967310  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:32.967437  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:33.493886  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:33.494043  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:34.033988  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:34.034046  4675 PointCloudFusion.cpp:34] size : 780802
+W1121 11:50:34.571343  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:34.571492  4675 PointCloudFusion.cpp:34] size : 780802
+W1121 11:50:35.103266  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:35.103389  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:35.621565  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:35.621673  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:36.173271  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:36.173328  4675 PointCloudFusion.cpp:34] size : 780802
+W1121 11:50:36.702925  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:36.703013  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:37.238097  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:37.238211  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:37.770099  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:37.770165  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:38.306488  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:38.306602  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:38.848395  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:38.848461  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:39.370934  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:39.371014  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:39.897465  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:39.897562  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:40.412871  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:40.413028  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:40.937860  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:40.937963  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:41.463776  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:41.463862  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:41.991405  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:41.991633  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:42.540746  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:42.540793  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:43.096146  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:43.096194  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:43.611258  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:43.611333  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:44.140810  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:44.140949  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:44.670711  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:44.670760  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:45.212694  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:45.212927  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:45.748736  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:45.748831  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:46.290321  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:46.290406  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:46.837386  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:46.837432  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:47.387452  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:47.387552  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:47.926271  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:47.926470  4675 PointCloudFusion.cpp:34] size : 780802
+W1121 11:50:48.467521  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:48.467620  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:49.018085  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:49.018151  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:49.544265  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:49.544486  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:50.086478  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:50.086757  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:50.624253  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:50.624389  4675 PointCloudFusion.cpp:34] size : 780802
+W1121 11:50:51.148948  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:51.149005  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:51.685120  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:51.685245  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:52.201126  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:52.201210  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:52.734652  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:52.734740  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:53.289963  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:53.290045  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:53.826800  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:53.827075  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:54.362187  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:54.362408  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:54.895534  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:54.896492  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:55.435808  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:55.435914  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:55.965502  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:55.965669  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:56.508270  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:56.508370  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:57.053411  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:57.053623  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:57.578495  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:57.578545  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:58.111289  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:58.111382  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:58.634495  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:58.634585  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:59.165349  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:59.165406  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:50:59.698103  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:50:59.698457  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:00.243175  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:00.243234  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:00.789793  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:00.789923  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:01.325613  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:01.325814  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:01.858722  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:01.858875  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:02.396414  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:02.396611  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:02.943454  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:02.943558  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:03.464922  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:03.465035  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:04.056102  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:04.056277  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:04.648150  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:04.648309  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:05.179867  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:05.179921  4675 PointCloudFusion.cpp:34] size : 780802
+W1121 11:51:05.701527  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:05.701643  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:06.229058  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:06.229167  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:06.741863  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:06.741958  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:07.256615  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:07.256791  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:07.796335  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:07.796401  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:08.309100  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:08.309257  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:08.840301  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:08.840485  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:09.365855  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:09.365931  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:09.890379  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:09.890519  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:10.423985  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:10.424144  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:10.955978  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:10.956050  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:11.493320  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:11.493433  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:12.009716  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:12.009918  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:12.541589  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:12.541666  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:13.061532  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:13.061657  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:13.583536  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:13.583614  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:14.111896  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:14.112032  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:14.640298  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:14.640408  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:15.148135  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:15.148185  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:15.697211  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:15.697314  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:16.243402  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:16.247933  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:16.836252  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:16.836395  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:17.380182  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:17.380640  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:17.904590  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:17.904713  4675 PointCloudFusion.cpp:34] size : 780802
+W1121 11:51:18.445183  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:18.445255  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:18.982225  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:18.982375  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:19.513217  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:19.513304  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:20.055938  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:20.056020  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:20.598067  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:20.598129  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:21.126785  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:21.126996  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:21.664268  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:21.664340  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:22.181130  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:22.181331  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:22.733489  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:22.733600  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:23.271975  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:23.272055  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:23.790809  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:23.790988  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:24.313596  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:24.313724  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:24.832850  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:24.833000  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:25.374080  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:25.374176  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:25.897816  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:25.897892  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:26.414436  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:26.414482  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:26.927942  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:26.928156  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:27.446342  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:27.446405  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:27.958559  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:27.958773  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:28.475687  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:28.475798  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:28.999945  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:29.000823  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:29.524932  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:29.525027  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:30.062870  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:30.063079  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:30.570680  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:30.570755  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:31.121733  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:31.121785  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:31.639528  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:31.639621  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:32.162380  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:32.162432  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:32.685601  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:32.685667  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:33.200620  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:33.200729  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:33.718703  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:33.718959  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:34.248287  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:34.248438  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:34.777202  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:34.777431  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:35.296185  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:35.296285  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:35.842288  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:35.843381  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:36.390969  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:36.391057  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:36.920383  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:36.920542  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:37.444422  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:37.444489  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:37.990543  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:37.990631  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:38.532863  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:38.533010  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:39.057874  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:39.058382  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:39.598999  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:39.599061  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:40.140928  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:40.141065  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:40.708570  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:40.708642  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:41.238402  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:41.238514  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:41.781153  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:41.781288  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:42.310696  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:42.310812  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:42.843443  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:42.843595  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:43.371554  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:43.371620  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:43.898044  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:43.898265  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:44.415709  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:44.415779  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:44.951735  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:44.951879  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:45.479760  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:45.480130  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:45.992961  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:45.993027  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:46.526465  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:46.526571  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:47.076886  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:47.076984  4675 PointCloudFusion.cpp:34] size : 780802
+W1121 11:51:47.618244  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:47.619376  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:48.131783  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:48.131944  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:48.650401  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:48.650476  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:49.180210  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:49.180289  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:49.704025  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:49.704140  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:50.235673  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:50.235736  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:50.756990  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:50.757088  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:51.293207  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:51.293327  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:51.820583  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:51.820765  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:52.360488  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:52.360702  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:52.888247  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:52.888413  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:53.401049  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:53.401099  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:53.923524  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:53.923710  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:54.450129  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:54.450251  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:54.966200  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:54.966349  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:55.482980  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:55.483124  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:56.079807  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:56.080262  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:56.594794  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:56.595171  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:57.121102  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:57.121243  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:57.641094  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:57.641225  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:58.170765  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:58.170887  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:58.701465  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:58.701656  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:59.223083  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:59.223206  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:51:59.752583  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:51:59.752800  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:00.273249  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:00.273313  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:00.807548  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:00.807595  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:01.332094  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:01.332269  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:01.871604  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:01.871671  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:02.392633  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:02.392747  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:02.911834  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:02.911880  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:03.455910  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:03.456033  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:03.975734  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:03.975817  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:04.497099  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:04.497165  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:05.017496  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:05.017580  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:05.528980  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:05.529121  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:06.046905  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:06.047053  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:06.580725  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:06.580847  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:07.095397  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:07.095445  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:07.621963  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:07.622057  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:08.148478  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:08.148600  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:08.670236  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:08.670392  4675 PointCloudFusion.cpp:34] size : 780802
+W1121 11:52:09.200691  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:09.200861  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:09.724537  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:09.724587  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:10.257663  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:10.259107  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:10.803050  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:10.803114  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:11.338140  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:11.338234  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:11.892534  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:11.892587  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:12.413900  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:12.414113  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:12.934803  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:12.934895  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:13.477828  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:13.478006  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:13.995859  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:13.996034  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:14.512050  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:14.512162  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:15.049192  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:15.049335  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:15.566509  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:15.566738  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:16.074174  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:16.074383  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:16.607280  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:16.607398  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:17.130033  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:17.130123  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:17.662220  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:17.662343  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:18.180951  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:18.181201  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:18.697633  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:18.697731  4675 PointCloudFusion.cpp:34] size : 780802
+W1121 11:52:19.324182  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:19.324270  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:19.866024  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:19.866138  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:20.383991  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:20.384095  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:20.934689  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:20.934777  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:21.475546  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:21.475632  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:21.994071  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:21.994391  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:22.576069  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:22.576609  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:23.113757  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:23.113862  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:23.621158  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:23.621251  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:24.156038  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:24.156159  4675 PointCloudFusion.cpp:34] size : 780802
+W1121 11:52:24.683887  4675 PointCloudFusion.cpp:26] get itbase_link
+W1121 11:52:24.684015  4675 PointCloudFusion.cpp:34] size : 780824
+W1121 11:52:25.194229  4675 PointCloudFusion.cpp:26] get itbase_link

@@ -1,0 +1,8 @@
+prefix=/home/ou/workspace/ugv_ws/install
+
+Name: excavator
+Description: Description of excavator
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
