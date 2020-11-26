@@ -1,0 +1,25 @@
+PointCloudFusion:
+  {
+    LiDAR_topic: [RubyLite1, RubyLite2 , velodyne1, velodyne2, velodyne3],
+    LiDAR_frame: [RubyLite1_frame,RubyLite2_frame,velodyne1,velodyne2,velodyne3],
+    Origin_LiDAR: RubyLite2,
+    Output_topic: fused_lidar
+  }
+
+PointCloudFilter:
+  {
+    ROI_R_min: 3.0,
+    ROI_R_max: 20.0
+  }
+
+PointCloudSegment:
+  {
+    ClusterTolerance: 0.5,
+    minSize: 20,
+    maxSize: 10000
+  }
+
+
+
+
+

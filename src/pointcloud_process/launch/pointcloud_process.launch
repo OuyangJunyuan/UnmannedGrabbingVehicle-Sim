@@ -1,0 +1,3 @@
+<launch>
+    <rosparam command="load" file="$(find pointcloud_process)/config/config.yaml"/>
+</launch>

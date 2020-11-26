@@ -20,7 +20,7 @@ project(excavator)
 #set project name to the files that content this CMakeLists.txt
 #get_filename_component(PROJECT ${CMAKE_SOURCE_DIR} NAME)
 set( CMAKE_BUILD_TYPE "release" )  #release debug 模式
-#set( CMAKE_CXX_FLAGS "-std=c++11 -O3" ) #c++11   o3优化
+#set( CMAKE_CXX_FLAGS "-std=c++11 -O3" ) #c++11   o3优化1
 
 ############################################################################################
 ###################################### Files struction  ####################################
@@ -141,11 +141,11 @@ list(APPEND ALL_LIBS ${GLOG_LIBRARIES})
 
 
 ##                         pcl
-find_package(PCL 1.8 REQUIRED )
-include_directories( ${PCL_INCLUDE_DIRS} )
-message("123"${PCL_INCLUDE_DIRS})
-add_definitions( ${PCL_DEFINITIONS} )
-list(APPEND ALL_LIBS ${PCL_LIBRARIES})
+#find_package(PCL 1.8 REQUIRED )
+#include_directories( ${PCL_INCLUDE_DIRS} )
+#message("123"${PCL_INCLUDE_DIRS})
+#add_definitions( ${PCL_DEFINITIONS} )
+#list(APPEND ALL_LIBS ${PCL_LIBRARIES})
 ############################################################################################
 ###################################### Generate lab/exe  ###################################
 ############################################################################################

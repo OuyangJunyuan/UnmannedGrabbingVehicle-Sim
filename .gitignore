@@ -1,6 +1,10 @@
-build
-devel
 src/CMakeLists.txt
-src/*/.idea/*
-src/*/cmake-build-debug/*
+
+**/build
+**/devel
+
+**/.idea
+**/cmake-build-debug
+
+
 

@@ -8,16 +8,16 @@
   WaistJoint_position_controller:
     type: effort_controllers/JointPositionController
     joint: WaistJoint
-    pid: {p: 10000.0, i: 10, d: 10.0}
+    pid: {p: 5000.0, i: 10, d: 0.0}
   ArmBaseJoint_position_controller:
     type: effort_controllers/JointPositionController
     joint: ArmBaseJoint
-    pid: {p: 10000.0, i: 10, d: 10.0}
+    pid: {p: 5000.0, i: 10, d: 0.0}
   Arm12Joint_position_controller:
     type: effort_controllers/JointPositionController
     joint: Arm12Joint
-    pid: {p: 10000.0, i: 10, d: 10.0}
+    pid: {p: 5000.0, i: 10, d: 0.0}
   Arm23Joint_position_controller:
     type: effort_controllers/JointPositionController
     joint: Arm23Joint
-    pid: {p: 10000.0, i: 10, d: 10.0}
+    pid: {p: 5000.0, i: 10, d: 0.0}
