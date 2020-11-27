@@ -3,51 +3,18 @@
 //
 
 #include "pointcloudprocess.h"
-
-#include <ros/ros.h>
-#include <ros/advertise_options.h>
-
 #include <pcl_ros/point_cloud.h>
 #include <pcl_conversions/pcl_conversions.h>
 
-#include <tf/transform_listener.h>
-#include <tf/transform_datatypes.h>
-
-#include <pcl/point_cloud.h>
-#include <pcl/common/transforms.h>
-#include <pcl/visualization/cloud_viewer.h>
 #include <pcl/filters/voxel_grid.h>
 #include <pcl/filters/crop_box.h>
-//#include <pcl/filters/radius_outlier_removal.h>   //半径滤波器头文件
-//#include <pcl/filters/passthrough.h>
 #include <pcl/filters/extract_indices.h>
+
 #include <pcl/segmentation/sac_segmentation.h>
 #include <pcl/segmentation/extract_clusters.h>
+
 #include <pcl/kdtree/kdtree.h>
-
-
-
-
-using namespace std;
-typedef pcl::PointCloud<pcl::PointXYZ> PCXYZ;
-
-ros::NodeHandle *n;
-ros::Publisher pub;
-vector<ros::Subscriber> vSubs;
-vector<string> vTopicName,vLiDARFrame;
-string outputTopicName;
-
-
-pcl::visualization::PCLVisualizer::Ptr viewer;
-
-vector<Eigen::Isometry3f> vTf;
-tf::TransformListener *pTFlisten;
-
-
-PCXYZ::Ptr gCloud(new PCXYZ);
-float ROI_R_max,ROI_R_min;
-float clusterTolerance,minSize,maxSize;
-
+#include <pcl/octree/octree_search.h>
 void TF2Eigen(tf::StampedTransform &_tf_trans,Eigen::Isometry3f &_eigen_trans){
 
     tf::Vector3 tf_t = _tf_trans.getRotation().getAxis();
@@ -57,7 +24,139 @@ void TF2Eigen(tf::StampedTransform &_tf_trans,Eigen::Isometry3f &_eigen_trans){
     _eigen_trans=eigen_trans;
 }
 
-void segmentation() {
+PointCloudProcess::PointCloudProcess(){
+    n=new ros::NodeHandle;
+    n->getParam("PointCloudFusion/LiDAR_topic",vTopicName);
+    n->getParam("PointCloudFusion/LiDAR_frame",vLiDARFrame);
+    n->param<string>("PointCloudFusion/Output_topic",outputTopicName,"fused_lidar");
+    n->param<float>("PointCloudFilter/ROI_R_max",ROI_R_max,50);
+    n->param<float>("PointCloudFilter/ROI_R_min",ROI_R_min,0);
+    n->param<float>("PointCloudSegment/clusterTolerance",clusterTolerance,1);
+    n->param<float>("PointCloudSegment/minSize",minSize,20);
+    n->param<float>("PointCloudSegment/maxSize",maxSize,10000);
+
+
+    ros::AdvertiseOptions ao = ros::AdvertiseOptions::create<sensor_msgs::PointCloud2>(
+            outputTopicName, 1,
+            boost::bind(&PointCloudProcess::ConnectCallBack,this),
+            boost::bind(&PointCloudProcess::ConnectCallBack,this),
+            ros::VoidPtr(), &msgqueue);
+    pub = n->advertise(ao);
+
+
+    vTf.resize(vTopicName.size());
+    pTFlisten = new tf::TransformListener;
+
+    gCloud=PCXYZ::Ptr(new PCXYZ);
+}
+
+
+void PointCloudProcess::ConnectCallBack(){
+    cout<<pub.getNumSubscribers()<<endl;
+    if(pub.getNumSubscribers()==1){
+        vSubs.resize(vTopicName.size());
+        for (int i = 0; i < vTopicName.size(); ++i) {
+            ROS_INFO("subscribe topic : %s  \n frame : %s",vTopicName[i].c_str(),vLiDARFrame[i].c_str());
+            vSubs[i] = n->subscribe<sensor_msgs::PointCloud2>(vTopicName[i],10,boost::bind(&PointCloudProcess::MsgCallBack,this,_1,i));
+        }
+    }else if(pub.getNumSubscribers()==0){
+        ROS_INFO("clear subscriber");
+        vSubs.clear();
+    }
+}
+void PointCloudProcess::MsgCallBack(sensor_msgs::PointCloud2::ConstPtr msg, int i){
+    static PCXYZ::Ptr pfusedPC(new PCXYZ);
+    static double *lasttime = new double[sizeof(vTopicName.size())];
+
+    /* get tf for initial value (rude)*/
+    tf::StampedTransform transform_tf;
+    try {
+        pTFlisten->lookupTransform("base_link", vLiDARFrame[i], ros::Time(0), transform_tf);
+        ROS_INFO("find tf %s in base_link", vLiDARFrame[i].c_str());
+        TF2Eigen(transform_tf, vTf[i]);
+    }
+    catch (tf::TransformException &ex) {
+        ROS_ERROR("%s", ex.what());
+        ros::Duration(1.0).sleep();
+        return;
+    }
+
+    /* check validity */
+    if (ros::Time::now().toSec() - lasttime[i] >= 0.5) {
+        ROS_INFO("topic '%s' is timeout and ignored ", vTopicName[i].c_str());
+        lasttime[i] = ros::Time::now().toSec();
+        return;
+    }
+    lasttime[i] = ros::Time::now().toSec();
+
+    /* fusion */
+    PCXYZ newFramePC, tfPC;
+    pcl::fromROSMsg(*msg, newFramePC);
+    pcl::transformPointCloud(newFramePC, tfPC, vTf[i]);
+    *pfusedPC += tfPC;
+
+    /* 认为第五帧到来后就融合5个LiDAR数据完毕 */
+    if (i == vTopicName.size() - 1) {
+        /* downsampling using vaxelgrid and send to topic */
+        pcl::VoxelGrid<pcl::PointXYZ> voxel_grid;
+        voxel_grid.setLeafSize(0.1f, 0.1f, 0.1f);
+        voxel_grid.setInputCloud(pfusedPC);
+        voxel_grid.filter(*gCloud);
+        /* do something */
+        Segment();
+        ROS_INFO("down sampling point cloud have %d points", gCloud->size());
+        pfusedPC=PCXYZ::Ptr(new PCXYZ);
+        /* send  */
+//        sensor_msgs::PointCloud2 msgPC;
+//        pcl::toROSMsg(*gCloud,msgPC);
+//        msgPC.header.frame_id="base_link";
+//        pub.publish(msgPC);
+    }
+}
+
+
+
+void PointCloudProcess::Segment() {
+    /* 距离滤波(box) */
+//    vector<int> inliersindices;
+//    pcl::CropBox<pcl::PointXYZ> region(true);
+//    region.setMax(Eigen::Vector4f(ROI_R_max,ROI_R_max,100,1));
+//    region.setMin(Eigen::Vector4f(-ROI_R_max,-ROI_R_max,0,1));
+//    region.setInputCloud(gCloud);
+//    region.filter(*gCloud);
+//
+//    region.setMax(Eigen::Vector4f(ROI_R_min,ROI_R_min,100,1));
+//    region.setMin(Eigen::Vector4f(-ROI_R_min,-ROI_R_min,0,1));
+//    region.setNegative(true);
+//    region.setInputCloud(gCloud);
+//    region.filter(*gCloud);
+    chrono::steady_clock::time_point t1 = chrono::steady_clock::now();
+    /* 半径滤波(Radius) */
+    pcl::octree::OctreePointCloudSearch<pcl::PointXYZ> octree (1);
+    octree.setInputCloud(gCloud);
+    octree.addPointsFromInputCloud();
+
+    std::vector<int> vIndices;
+    std::vector<float> vDistance;
+    pcl::PointXYZ searchPoint(0,0,0);
+    if(octree.radiusSearch (searchPoint, ROI_R_max, vIndices, vDistance)>0){
+        ROS_INFO("radius max filter ok : %f",ROI_R_max);
+        pcl::copyPointCloud(*gCloud,vIndices,*gCloud);
+    }
+
+    octree=pcl::octree::OctreePointCloudSearch<pcl::PointXYZ>(1);
+    octree.setInputCloud(gCloud);
+    octree.addPointsFromInputCloud();
+    if(octree.radiusSearch (searchPoint, ROI_R_min, vIndices, vDistance)>0){
+        ROS_INFO("radius min filter ok : %f",ROI_R_min);
+        pcl::PointIndices::Ptr indices(new pcl::PointIndices);
+        indices->indices=vIndices;
+        pcl::ExtractIndices<pcl::PointXYZ> ex;
+        ex.setInputCloud(gCloud);
+        ex.setIndices(indices);
+        ex.setNegative(true);
+        ex.filter(*gCloud);
+    }
     /* 平面拟合 */
     pcl::ModelCoefficients::Ptr coeff(new pcl::ModelCoefficients);
     pcl::PointIndices::Ptr inliers(new pcl::PointIndices);
@@ -126,126 +225,18 @@ void segmentation() {
             colorPC[pit].b = b;
         }
     }
+    chrono::steady_clock::time_point t2 = chrono::steady_clock::now();
+    chrono::duration<double> time_used = chrono::duration_cast<chrono::duration<double>>( t2-t1 );
+    cout<<"solve time cost = "<<time_used.count()<<" seconds. "<<endl;
     /* 发送至可视化 */
     pcl::toROSMsg(colorPC,msg2sent);
     msg2sent.header.frame_id="base_link";
     pub.publish(msg2sent);
-}
-void CallBack(sensor_msgs::PointCloud2::ConstPtr msg,int i) {
-    static PCXYZ::Ptr pfusedPC(new PCXYZ);
-    static double *lasttime = new double[sizeof(vTopicName.size())];
 
-    /* get tf for initial value (rude)*/
-    tf::StampedTransform transform_tf;
-    try {
-        pTFlisten->lookupTransform("base_link", vLiDARFrame[i], ros::Time(0), transform_tf);
-        ROS_INFO("find tf %s in base_link", vLiDARFrame[i].c_str());
-        TF2Eigen(transform_tf, vTf[i]);
-    }
-    catch (tf::TransformException &ex) {
-        ROS_ERROR("%s", ex.what());
-        ros::Duration(1.0).sleep();
-        return;
-    }
-
-    /* check validity */
-    if (ros::Time::now().toSec() - lasttime[i] >= 0.5) {
-        ROS_INFO("topic '%s' is timeout and ignored ", vTopicName[i].c_str());
-        lasttime[i] = ros::Time::now().toSec();
-        return;
-    }
-    lasttime[i] = ros::Time::now().toSec();
-
-    /* fusion */
-    PCXYZ newFramePC, tfPC;
-    pcl::fromROSMsg(*msg, newFramePC);
-    pcl::transformPointCloud(newFramePC, tfPC, vTf[i]);
-    *pfusedPC += tfPC;
-
-    /* 认为第五帧到来后就融合5个LiDAR数据完毕 */
-    if (i == vTopicName.size() - 1) {
-
-        /* downsampling using vaxelgrid and send to topic */
-        pcl::VoxelGrid<pcl::PointXYZ> voxel_grid;
-        voxel_grid.setLeafSize(0.1f, 0.1f, 0.1f);
-        //cvt to pc2
-        voxel_grid.setInputCloud(pfusedPC);
-        voxel_grid.filter(*gCloud);
-        /* do something */
-        segmentation();
-        ROS_INFO("down sampling point cloud have %d points", gCloud->size());
-        pfusedPC=PCXYZ::Ptr(new PCXYZ);
-        /* send  */
-//        sensor_msgs::PointCloud2 msgPC;
-//        pcl::toROSMsg(*gCloud,msgPC);
-//        msgPC.header.frame_id="base_link";
-//        pub.publish(msgPC);
-    }
 }
 
-void CntCB(){
-    cout<<pub.getNumSubscribers()<<endl;
-    if(pub.getNumSubscribers()==1){
-        vSubs.resize(vTopicName.size());
-        for (int i = 0; i < vTopicName.size(); ++i) {
-            ROS_INFO("subscribe topic : %s  \n frame : %s",vTopicName[i].c_str(),vLiDARFrame[i].c_str());
-            vSubs[i] = n->subscribe<sensor_msgs::PointCloud2>(vTopicName[i],10,boost::bind(CallBack,_1,i));
-        }
-    }else if(pub.getNumSubscribers()==0){
-        ROS_INFO("clear subscriber");
-        vSubs.clear();
-    }
-}
-
-int main(int argc,char **argv)
-{
-    ros::init(argc, argv,"LiDAR_PC_Process");
-
-    n=new ros::NodeHandle;
-    n->getParam("PointCloudFusion/LiDAR_topic",vTopicName);
-    n->getParam("PointCloudFusion/LiDAR_frame",vLiDARFrame);
-    n->param<string>("PointCloudFusion/Output_topic",outputTopicName,"fused_lidar");
-    n->param<float>("PointCloudFilter/ROI_R_max",ROI_R_max,50);
-    n->param<float>("PointCloudFilter/ROI_R_min",ROI_R_max,0);
-    n->param<float>("PointCloudSegment/clusterTolerance",clusterTolerance,1);
-    n->param<float>("PointCloudSegment/minSize",minSize,20);
-    n->param<float>("PointCloudSegment/maxSize",maxSize,10000);
 
 
 
-    ros::CallbackQueue msgqueue;
-    vTf.resize(vTopicName.size());
-    pTFlisten = new tf::TransformListener;
-
-    ros::AdvertiseOptions ao = ros::AdvertiseOptions::create<sensor_msgs::PointCloud2>(
-            outputTopicName, 1,
-            boost::bind(CntCB),
-            boost::bind(CntCB),
-            ros::VoidPtr(), &msgqueue);
-    pub = n->advertise(ao);
-
-//
-//    viewer = pcl::visualization::PCLVisualizer::Ptr(new pcl::visualization::PCLVisualizer("Point Cloud Viewer"));
-//
-    //    pcl::visualization::PointCloudColorHandlerCustom<pcl::PointXYZ> src_h (pcd_src, 0, 255, 0);
-//    pcl::visualization::PointCloudColorHandlerCustom<pcl::PointXYZ> tgt_h (pcd_tgt, 255, 0, 0);
-//    pcl::visualization::PointCloudColorHandlerCustom<pcl::PointXYZ> final_h (pcd_final, 0, 0, 255);
-//    viewer.addPointCloud (pcd_src, src_h, "source cloud");
-//    viewer.addPointCloud (pcd_tgt, tgt_h, "tgt cloud");
-//    viewer.addPointCloud (pcd_final, final_h, "final cloud");
-
-    ros::Rate loop_rate(100);
-    while(ros::ok()){
-        msgqueue.callAvailable();
-//
-//        if (!viewer->wasStopped())
-//        {
-//            viewer->spinOnce(10);
-//        }
-        ros::spinOnce();
-        loop_rate.sleep();
-    }
-    return 0;
-}
 
 

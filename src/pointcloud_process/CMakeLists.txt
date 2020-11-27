@@ -32,7 +32,7 @@ list(APPEND ALL_LIBS ${catkin_LIBRARIES})
 # )
 
 # add_dependencies(${PROJECT_NAME} ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_executable(PointCloudProcess src/pointcloudprocess.cpp)
+add_executable(PointCloudProcess src/pointcloudprocess.cpp src/ProcessNode.cpp)
 target_link_libraries(PointCloudProcess ${ALL_LIBS})
 
 

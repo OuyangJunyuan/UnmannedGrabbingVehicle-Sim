@@ -5,7 +5,7 @@ PointCloudFusion:
     Origin_LiDAR: RubyLite2,
     Output_topic: fused_lidar
   }
-
+#注意聚类的时候的分离距离和激光雷达在 ROI边缘分辨率关系
 PointCloudFilter:
   {
     ROI_R_min: 3.0,
