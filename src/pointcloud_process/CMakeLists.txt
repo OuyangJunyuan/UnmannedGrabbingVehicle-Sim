@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(pointcloud_process)
-
+set( CMAKE_BUILD_TYPE "release" )  #release debug 模式
 find_package(PCL 1.8 REQUIRED )
 include_directories( ${PCL_INCLUDE_DIRS} )
 add_definitions( ${PCL_DEFINITIONS} )
