@@ -7,4 +7,4 @@ src/CMakeLists.txt
 **/cmake-build-debug
 
 
-
+**/shapenetcore_partanno_segmentation_benchmark_v0
