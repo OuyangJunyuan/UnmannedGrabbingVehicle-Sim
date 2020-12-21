@@ -5,7 +5,6 @@
 #include "pointcloudprocess.h"
 #include <pcl_ros/point_cloud.h>
 #include <pcl_conversions/pcl_conversions.h>
-
 #include <pcl/filters/voxel_grid.h>
 #include <pcl/filters/crop_box.h>
 #include <pcl/filters/extract_indices.h>
@@ -209,30 +208,28 @@ void PointCloudProcess::Segment() {
     ROS_INFO("%d clusters",clusterIndices.size());
 
     sensor_msgs::PointCloud2 msg2sent;
-    pcl::PointCloud<pcl::PointXYZRGB> colorPC;
-    pcl::copyPointCloud(*cutedPC,colorPC);
+    pcl::PointCloud<pcl::PointXYZL> labelPC; //带标签的PC类型
+    pcl::copyPointCloud(*cutedPC,labelPC);
 
-
-    /* 上色 */
+    ROS_INFO("totall %d clusters",clusterIndices.size());
+    /* 上聚类label */
+    int i=0;
     for (auto it:clusterIndices)
     {
-        static int i=1;
-        uint8_t r=(i*20)%255,g=(255-20*i)%255,b=(20*i*i)%255;
-        i++;
         for (auto pit:it.indices) {
-            colorPC[pit].r = r;
-            colorPC[pit].g = g;
-            colorPC[pit].b = b;
+            labelPC[pit].label = i;
+            cout<<pit<<endl;
         }
+        i++;
     }
+
     chrono::steady_clock::time_point t2 = chrono::steady_clock::now();
     chrono::duration<double> time_used = chrono::duration_cast<chrono::duration<double>>( t2-t1 );
     cout<<"solve time cost = "<<time_used.count()<<" seconds. "<<endl;
     /* 发送至可视化 */
-    pcl::toROSMsg(colorPC,msg2sent);
+    pcl::toROSMsg(labelPC,msg2sent);
     msg2sent.header.frame_id="base_link";
     pub.publish(msg2sent);
-
 }
 
 

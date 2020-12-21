@@ -8,14 +8,14 @@ PointCloudFusion:
 #注意聚类的时候的分离距离和激光雷达在 ROI边缘分辨率关系
 PointCloudFilter:
   {
-    ROI_R_min: 3.0,
+    ROI_R_min: 4.0,
     ROI_R_max: 20.0
   }
 
 PointCloudSegment:
   {
     ClusterTolerance: 0.5,
-    minSize: 20,
+    minSize: 50,
     maxSize: 10000
   }
 

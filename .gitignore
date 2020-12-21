@@ -8,3 +8,4 @@ src/CMakeLists.txt
 
 
 **/shapenetcore_partanno_segmentation_benchmark_v0
+**/bag
