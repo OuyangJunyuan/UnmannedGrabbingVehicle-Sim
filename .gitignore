@@ -1,5 +1,5 @@
 src/CMakeLists.txt
-
+./.catkin_workspace
 **/build
 **/devel
 
