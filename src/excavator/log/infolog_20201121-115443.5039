@@ -1,4 +1,0 @@
-Log file created at: 2020/11/21 11:54:43
-Running on machine: ou-pc
-Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
-W1121 11:54:43.901814  5039 PointCloudFusion.cpp:26] x : -2.97365 y : -1.10444e-05 z : 3.28931

@@ -1,0 +1,319 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="Excavator">
+  <xacro:include filename="$(find velodyne_description)/urdf/LiDAR-80.xacro"/>
+  <xacro:include filename="$(find velodyne_description)/urdf/VLP-16.urdf.xacro"/>
+  <xacro:include filename="$(find robot_description)/urdf/CameraSensor.xacro"/>
+
+
+
+  <xacro:property name="M_PI" value="3.1415926535897931" />
+  <xacro:macro name="Macro_transmission" params="name joint actuator">
+    <transmission name="${name}">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="${joint}">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="${actuator}">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+  </xacro:macro>
+  <xacro:macro name="Macro_RevoluteJoint" params="name  parent child lmt_h:=0 lmt_l:=0 *origin *axis" >
+    <joint name="${name}"  type="revolute">
+      <parent link="${parent}" />
+      <child link="${child}" />
+      <xacro:insert_block name="origin" />
+      <xacro:insert_block name="axis" />
+      <limit  lower="${lmt_l}" upper="${lmt_h}" effort="1e12" velocity="1e12" />
+    </joint>
+    <xacro:Macro_transmission  name="${name}_tsms" joint="${name}" actuator="${name}_actor"/>
+  </xacro:macro>
+
+
+
+  <xacro:macro name="Macro_TopLink" params="name:=TopLink mesh:=package://robot_description/meshes/Top_link.STL">
+    <gazebo reference="${name}">
+      <material>Gazebo/Yellow</material>
+    </gazebo>
+    <link name="${name}">
+      <inertial>
+        <origin
+                xyz="0.85443 0.42482 -0.035362"
+                rpy="0 0 0" />
+        <mass
+                value="244" />
+        <inertia
+                ixx="43.7"
+                ixy="-9.32"
+                ixz="-9.81"
+                iyy="9"
+                iyz="0.499"
+                izz="76" />
+      </inertial>
+      <visual>
+        <origin
+                xyz="0 0 0"
+                rpy="0 0 0" />
+        <geometry>
+          <mesh filename="${mesh}" />
+        </geometry>
+        <material  name="">
+          <color
+                  rgba="1 1 0 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin
+                xyz="0 0 0"
+                rpy="0 0 0" />
+        <geometry>
+          <mesh  filename="${mesh}" />
+        </geometry>
+      </collision>
+    </link>
+  </xacro:macro>
+  <xacro:macro name="Macro_MoveBaseLink" params="name:=MoveBaseLink mesh:=package://robot_description/meshes/base_link.STL">
+    <gazebo reference="${name}">
+      <material>Gazebo/Black</material>
+    </gazebo>
+    <link name="${name}">
+      <inertial>
+        <origin
+                xyz="0.072298 -0.0051598 -4.4577E-09"
+                rpy="0 0 0" />
+        <mass value="2666.6" />
+        <inertia
+                ixx="1510.3"
+                ixy="-0.52119"
+                ixz="3.0279E-06"
+                iyy="1455"
+                iyz="-4.6553E-07"
+                izz="1569.1" />
+      </inertial>
+      <visual>
+        <origin
+                xyz="0 0 0"
+                rpy="0 0 0" />
+        <geometry>
+          <mesh
+                  filename="${mesh}" />
+        </geometry>
+        <material
+                name="">
+          <color
+                  rgba="1 1 1 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin
+                xyz="0 0 0"
+                rpy="0 0 0" />
+        <geometry>
+          <mesh
+                  filename="${mesh}" />
+        </geometry>
+      </collision>
+    </link>
+  </xacro:macro>
+  <xacro:macro name="Macro_ArmLink1" params="name:=ArmLink1 mesh:=package://robot_description/meshes/arm_link1.STL">
+    <gazebo reference="${name}">
+      <material>Gazebo/Orange</material>
+    </gazebo>
+    <link name="${name}">
+      <inertial>
+        <origin
+                xyz="-0.22767 1.7727 8.527E-12"
+                rpy="0 0 0" />
+        <mass
+                value="224.3" />
+        <inertia
+                ixx="147.1"
+                ixy="50.61"
+                ixz="6.3581E-13"
+                iyy="33.65"
+                iyz="-1.2935E-12"
+                izz="178" />
+      </inertial>
+      <visual>
+        <origin
+                xyz="0 0 0"
+                rpy="0 0 0" />
+        <geometry>
+          <mesh
+                  filename="${mesh}" />
+        </geometry>
+        <material
+                name="">
+          <color
+                  rgba="0.52941 0.54902 0.54902 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin
+                xyz="0 0 0"
+                rpy="0 0 0" />
+        <geometry>
+          <mesh
+                  filename="${mesh}" />
+        </geometry>
+      </collision>
+    </link>
+  </xacro:macro>
+  <xacro:macro name="Macro_ArmLink2" params="name:=ArmLink2 mesh:=package://robot_description/meshes/arm_link2.STL">
+    <gazebo reference="${name}">
+      <material>Gazebo/Orange</material>
+    </gazebo>
+    <link name="${name}">
+      <inertial>
+        <origin
+                xyz="0.0051018 -1.0842 8.5292E-12"
+                rpy="0 0 0" />
+        <mass
+                value="186.93" />
+        <inertia
+                ixx="31.46"
+                ixy="-0.28491"
+                ixz="1.8029E-15"
+                iyy="0.80254"
+                iyz="7.113E-14"
+                izz="31.54" />
+      </inertial>
+      <visual>
+        <origin
+                xyz="0 0 0"
+                rpy="0 0 0" />
+        <geometry>
+          <mesh
+                  filename="${mesh}" />
+        </geometry>
+        <material
+                name="">
+          <color
+                  rgba="0.52941 0.54902 0.54902 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin
+                xyz="0 0 0"
+                rpy="0 0 0" />
+        <geometry>
+          <mesh
+                  filename="${mesh}" />
+        </geometry>
+      </collision>
+    </link>
+  </xacro:macro>
+  <xacro:macro name="Macro_ArmLink3" params="name:=ArmLink3 mesh:=package://robot_description/meshes/arm_link3.STL">
+    <gazebo reference="${name}">
+      <material>Gazebo/Orange</material>
+    </gazebo>
+    <link name="${name}">
+      <inertial>
+        <origin
+                xyz="0.10076 -0.52187 5.5716E-07"
+                rpy="0 0 0" />
+        <mass
+                value="51.2" />
+        <inertia
+                ixx="7.288"
+                ixy="1.95"
+                ixz="-2.3668E-05"
+                iyy="7.748"
+                iyz="1.0369E-05"
+                izz="6.765" />
+      </inertial>
+      <visual>
+        <origin
+                xyz="0 0 0"
+                rpy="0 0 0" />
+        <geometry>
+          <mesh
+                  filename="${mesh}" />
+        </geometry>
+        <material
+                name="">
+          <color
+                  rgba="0.52941 0.54902 0.54902 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin
+                xyz="0 0 0"
+                rpy="0 0 0" />
+        <geometry>
+          <mesh
+                  filename="${mesh}" />
+        </geometry>
+      </collision>
+    </link>
+  </xacro:macro>
+  <xacro:macro name="RubyLite" params="name:=RubyLite parent frame *origin topic">
+    <xacro:laserModel
+            name="${name}"
+            parent="${parent}"
+            topic="${topic}"
+            frame="${frame}"
+            samples="360"
+            hz="10"
+            visualize="false">
+      <xacro:insert_block name="origin" />
+    </xacro:laserModel>
+  </xacro:macro>
+
+  <!-- 实例化一个挖掘机的宏定义 -->
+  <xacro:macro name="Macro_Excavator" params="parent">
+    <gazebo>
+      <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so"/>
+    </gazebo>
+    <joint name="mountjoint" type="fixed">
+      <parent link="${parent}"/>
+      <child link="MoveBaseLink"/>
+      <origin xyz="0 0 0"  rpy="0 0 0" />
+    </joint>
+    <xacro:Macro_MoveBaseLink name="MoveBaseLink"/>
+    <xacro:Macro_TopLink name="TopLink"/>
+    <xacro:Macro_ArmLink1 name="ArmLink1"/>
+    <xacro:Macro_ArmLink2 name="ArmLink2"/>
+    <xacro:Macro_ArmLink3 name="ArmLink3"/>
+
+    <xacro:Macro_RevoluteJoint name="WaistJoint"   parent="MoveBaseLink" child="TopLink"  lmt_h="${M_PI}"   lmt_l="-${M_PI}">
+      <origin xyz="0.013413 0 0.28256"  rpy="1.5708 0 0" />
+      <axis xyz="0 1 0" />
+    </xacro:Macro_RevoluteJoint>
+    <xacro:Macro_RevoluteJoint name="ArmBaseJoint" parent="TopLink"      child="ArmLink1" lmt_h="${M_PI/3}" lmt_l="-${M_PI/3}">
+      <origin xyz="-0.14 0.7037 0"  rpy="0 0 0.49988" />
+      <axis xyz="0 0 1" />
+    </xacro:Macro_RevoluteJoint>
+    <xacro:Macro_RevoluteJoint name="Arm12Joint"   parent="ArmLink1"     child="ArmLink2" lmt_h="${M_PI/2}" lmt_l="-${M_PI/2}">
+      <origin xyz="-1.3948 3.2859 0" rpy="0 0 -0.67351" />
+      <axis xyz="0 0 1" />
+    </xacro:Macro_RevoluteJoint>
+    <xacro:Macro_RevoluteJoint name="Arm23Joint"   parent="ArmLink2"     child="ArmLink3" lmt_h="${M_PI/2}" lmt_l="-${M_PI/2}">
+      <origin xyz="0 -2.24 0" rpy="0 0 -0.066766" />
+      <axis xyz="0 0 1" />
+    </xacro:Macro_RevoluteJoint>
+
+    <!--  激光雷达 80线两个  -->
+    <xacro:RubyLite name="RubyLite1" parent="ArmLink1" frame="RubyLite1_frame" topic="RubyLite1">
+      <origin xyz="-1.3948 3.3859 0" rpy="${-M_PI/2} 0 -0.67351" />
+    </xacro:RubyLite>
+    <xacro:RubyLite name="RubyLite2" parent="TopLink"  frame="RubyLite2_frame" topic="RubyLite2">
+      <origin xyz="-0.7 1.55 0.5" rpy="${-M_PI/2} 0 0" />
+    </xacro:RubyLite>
+    <!--  激光雷达 32线3个  -->
+    <xacro:VLP-16   name="velodyne1" parent="TopLink"  samples="360" topic="/velodyne1">
+      <origin xyz="-0.9 0.3 1" rpy="${-M_PI/2} 0 0" />
+    </xacro:VLP-16>
+    <xacro:VLP-16   name="velodyne2" parent="TopLink"  samples="360" topic="/velodyne2">
+      <origin xyz="2.2 0.3 1" rpy="${-M_PI/2} 0 0" />
+    </xacro:VLP-16>
+    <xacro:VLP-16   name="velodyne3" parent="TopLink"  samples="360" topic="/velodyne3">
+      <origin xyz="2.2 0.3 -1" rpy="${-M_PI/2} 0 0" />
+    </xacro:VLP-16>
+
+    <xacro:Macro_CameraROS name="camera1" parent="TopLink" frame="camera1_link" >
+      <origin xyz="-0.7 1.55 0.6" rpy="${-M_PI/2} ${M_PI} 0" />
+    </xacro:Macro_CameraROS>
+  </xacro:macro>
+</robot>
